@@ -1,10 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
 import { Providers } from '@/components/providers';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
-const jetbrains = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
   title: 'NetGuard AI — Network Attack Forecasting',
@@ -19,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${jetbrains.variable} font-sans antialiased`}
-      >
+      <body className="font-sans antialiased">
         <Providers>{children}</Providers>
       </body>
     </html>
