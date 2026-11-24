@@ -44,8 +44,6 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000 in your browser.
-
 ## Project Status
 
 Prototype / academic project — intended to demonstrate a network-security monitoring and attack-risk forecasting workflow.
